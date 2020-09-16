@@ -37,5 +37,10 @@ int main()
 
          //5
 
+         cout << "Please enter your age " << "!\n";
+         int age;
+         cin >> age;
+         cout << "I hear you just had a birthday and you are" <<' ' << age <<' ' << "years old." << "\n";
+
          return 0;
 }
