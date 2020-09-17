@@ -29,18 +29,55 @@ int main()
          cin >> friend_sex;
          if (friend_sex=='f')
          {
-         		cout << "If you see" <<' ' << friend_first_name <<' ' << friend_second_name <<' ' <<"please ask her to call me." << "!\n";
+         		cout << "If you see" <<' ' << friend_first_name <<' ' << friend_second_name <<' ' <<"please ask her to call me." << "\n";
          }else	
          {
-         		cout << "If you see" <<' ' << friend_first_name <<' ' << friend_second_name <<' ' <<"please ask him to call me." << "!\n";
+         		cout << "If you see" <<' ' << friend_first_name <<' ' << friend_second_name <<' ' <<"please ask him to call me." << "\n";
          }
 
          //5
 
-         cout << "Please enter your age " << "!\n";
+         cout << "Please enter your age" << "!\n";
          int age;
          cin >> age;
-         cout << "I hear you just had a birthday and you are" <<' ' << age <<' ' << "years old." << "\n";
+         if (age<=0 || age>=110)
+         {
+         	simple_error("you're kidding!");
+
+         }else
+
+         {
+         	cout << "I hear you just had a birthday and you are" <<' ' << age <<' ' << "years old." << "\n";
+
+	         if (age<12)
+	         {
+	         	++age;
+	         	cout << "Next year you will be" <<' ' << age << "\n";
+
+	         }else
+
+		     {
+		         if (age==17)
+		         {
+		         	cout << "Next year you will be able to vote." << "\n";
+
+		         }else
+
+		         {
+		         	if (age>70)
+		         	{
+		         		cout << "I hope you are enjoying retirement." << "\n";
+		         	}
+
+		         }
+
+	         }
+
+         }
+
+         //6
+
+         cout << "Yours sincerely," <<"\n" <<"\n" <<"Bakos Richárd" <<"\n";
 
          return 0;
 }
