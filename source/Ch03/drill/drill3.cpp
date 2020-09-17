@@ -42,7 +42,7 @@ int main()
          cin >> age;
          if (age<=0 || age>=110)
          {
-         	simple_error("you're kidding!");
+         	simple_error("You're kidding!");
 
          }else
 
