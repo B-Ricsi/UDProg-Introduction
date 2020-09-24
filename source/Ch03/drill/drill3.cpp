@@ -4,12 +4,11 @@ int main()
 {
 		//2
 
-         cout << "Please enter your first and second name (followed by 'enter'):\n";
+         cout << "Please enter your first name (followed by 'enter'):\n";
          string first_name;
-         string second_name;
-         cin >> first_name >> second_name;
-         cout << "Hello, " << first_name << second_name << "!\n";
-         cout << "How are you, " << first_name <<' ' << second_name << "?\n";
+         cin >> first_name;
+         cout << "Hello, " << first_name << "!\n";
+         cout << "How are you, " << first_name << "?\n";
          string answer;
          cin >> answer;
          cout << "I miss you!"<< "\n";
