@@ -15,36 +15,42 @@ int main()
  		
  		if (szam1==szam2)
  		{
- 			cout << "The numbers are equal";
+ 			cout << "The numbers are equal" <<"\n";
  		}
 
 		if (szam1>szam2)
 		{
 			cout << "The smaller value is: " << szam2 <<"\n";
 			cout << "The larger value is: " << szam1 <<"\n";
-			szam2=min_now;
-			szam1=max_now;
-		}else
+			min_now=szam2;
+			max_now=szam1;
+		}
+		if (szam1<szam2)
 		{
 			cout << "The smaller value is: " << szam1 <<"\n";
 			cout << "The larger value is: " << szam2 <<"\n";
-			szam1=min_now;
-			szam2=max_now;
+			min_now=szam1;
+			max_now=szam2;
 		}
-		if (abs(szam1-szam2)<=0.01)
+
+		if (abs(szam1-szam2)<=0.01 && abs(szam1-szam2)!=0)
 		{
 			cout << "The numbers are almost equal" <<"\n";
 		}
+
 		if (index==0)
 		{
-			min_now=min;
-			max_now=max;
+			min=min_now;
+			max=max_now;
 			index++;
 		}
+
 		if (min_now<min)
 		{
 			min=min_now;
-		}else
+		}
+
+		if(max_now>max)
 		{
 			max=max_now;
 		}
