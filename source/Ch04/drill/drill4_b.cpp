@@ -49,8 +49,11 @@ int main()
 	double min = 0;
 	int index = 0;
 	double meter = 0;
+	double osszeg=0;
+	double i_osszeg=0;
 
 	cout << "Legalunits: cm, m, in, ft" <<"\n";
+	vector<double> values;
 
 	while(cin >> szam >> unit)
 	{
@@ -58,6 +61,7 @@ int main()
 	        if (legal(unit))
 	        {
 	            meter= convert(szam, unit);
+
 	            if (unit == "m")
 	            {  
 	            	cout << szam <<' ' << unit <<"\n";
@@ -67,7 +71,13 @@ int main()
 	            {
 	                cout << "Meter:" <<' ' << meter <<' ' <<"m" << "\n";
 	            }
-	        
+	        	if (szam==meter)
+	        	{
+	        		osszeg+=szam;
+	        	}else
+	        	{
+	        		osszeg+=meter;
+	        	}
 
 				if (index==0)
 				{
@@ -86,10 +96,23 @@ int main()
 				}
 				cout << "The smallest so far: " << min <<"\n";
 				cout << "The largest so far: " << max <<"\n";
+				cout << "The sum of values: " << osszeg <<" m"<<"\n";
+				values.push_back(meter);
+
+				sort(values);  
+				
+				for (auto value : values)
+     			{
+
+          			cout << value << " ";
+
+     			}
+     			cout << "\n";
+
 			}else
 
 				{
-					simple_error(Error: illegal unit!);
+					simple_error("Error: illegal unit!");
 				}
 
 	}
