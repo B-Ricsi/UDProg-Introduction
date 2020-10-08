@@ -8,16 +8,14 @@ bool legal(string unit)
 	{
 		vector<string> good={"cm", "m", "in", "ft"};
 	
-	    bool legal = false;
 	    for (int i=0; i<good.size();++i)
 	    {
 	        if (unit == good[i])
 	        {
-	            legal = true;
+	        	return true;
 	        }
-
 	    }
-	    return legal;
+	    return false;
 	}
 
 double convert(double szam, string unit)
@@ -77,22 +75,22 @@ int main()
 	        	}else
 	        	{
 	        		osszeg+=meter;
-	        	}
+	        	}//<3
 
 				if (index==0)
 				{
-					min=szam;
-					max=szam;
+					min=meter;
+					max=meter;
 					index++;
 				}
 
-				if (szam>max)
+				if (meter>max)
 				{
-					max=szam;
+					max=meter;
 				}
-				if (szam<min)
+				if (meter<min)
 				{
-					min=szam;
+					min=meter;
 				}
 				cout << "The smallest so far: " << min <<"\n";
 				cout << "The largest so far: " << max <<"\n";
@@ -101,10 +99,10 @@ int main()
 
 				sort(values);  
 				
-				for (auto value : values)
+				for (int i=0;i<values.size();++i)
      			{
 
-          			cout << value << " ";
+          			cout << values[i] << " ";
 
      			}
      			cout << "\n";

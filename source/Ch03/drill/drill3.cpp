@@ -50,8 +50,7 @@ int main()
 
 	         if (age<12)
 	         {
-	         	++age;
-	         	cout << "Next year you will be" <<' ' << age << "\n";
+	         	cout << "Next year you will be" <<' ' << ++age << "\n";
 
 	         }else
 
