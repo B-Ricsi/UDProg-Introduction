@@ -5,17 +5,23 @@ int i;
 int main()
 {
 	foo=7;
-	i =99;
-	print(i);
-	print(foo);
-	swap_r(foo,i);
-	print(i);
-	print(foo);
-	swap_v(foo,i);
-	print(i);
-	print(foo);
-	swap_cr(foo,i);
-	print(i);
-	print(foo);
+
+	print_foo();
+	print(99);
+
+	int x =7;
+	int y =9;
+
+	swap_v(x,y);
+	swap_v(7,9);
+	const int cx = 7;
+	const int cy = 9;
+	swap_cr(cx,cy);
+	swap_cr(7.7,9.9);
+	double dx = 7.7;
+	double dy = 9.9;
+	swap_r(dx,dy);
+	swap_r(7.7,9.9);
+
 	return 0;
 }

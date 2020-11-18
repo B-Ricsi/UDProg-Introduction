@@ -12,27 +12,28 @@ void print(int i)
 }
 void swap_v(int a, int b)
 {
+
+	cout<<a<<" "<<b<<endl;
 	int temp;
-	temp =a;
-	a =b;
+	temp = a; 
+	a=b;
 	b=temp;
+	cout<<a<<" "<<b<<endl;
 
 }
-void swap_r(int& a, int& b)
+void swap_r(double& a, double& b)
 {
-	int temp;
-	temp = a;
-	a = b;
-	b = temp;
 
+	cout<<a<<" "<<b<<endl;
+	double temp;
+	temp = a; 
+	a=b;
+	b=temp;
+	cout<<a<<" "<<b<<endl;
 
 }
 void swap_cr(const int& a,  const int& b)
 {
-	int temp;
-	temp = a;
-	a = b;
-	b = temp;
-	
+
 }
 
