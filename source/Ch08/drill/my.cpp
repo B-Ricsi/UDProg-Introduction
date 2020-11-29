@@ -13,7 +13,7 @@ void print(int i)
 void swap_v(int a, int b)
 {
 
-	cout<<a<<" "<<b<<endl;
+	cout <<a <<" "<<b <<endl;
 	int temp;
 	temp = a; 
 	a=b;
@@ -21,11 +21,11 @@ void swap_v(int a, int b)
 	cout<<a<<" "<<b<<endl;
 
 }
-void swap_r(double& a, double& b)
+void swap_r(int& a, int& b)
 {
 
 	cout<<a<<" "<<b<<endl;
-	double temp;
+	int temp;
 	temp = a; 
 	a=b;
 	b=temp;

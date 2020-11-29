@@ -20,8 +20,8 @@ int main()
 	swap_cr(7.7,9.9);
 	double dx = 7.7;
 	double dy = 9.9;
-	swap_r(dx,dy);
-	swap_r(7.7,9.9);
+	swap_v(dx,dy);
+	swap_v(7.7,9.9);
 
 	return 0;
 }
